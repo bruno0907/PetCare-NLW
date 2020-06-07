@@ -68,3 +68,7 @@ E claro tratamento da mensagem de sucesso na inserção:
             message2: "Aguarde, você será direcionado automaticamente em 2 segundos...",
             redirect: "/"
         })
+
+## Telas demonstrativas
+
+(/public/assets/desktop_home.png)
