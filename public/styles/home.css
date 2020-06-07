@@ -1,0 +1,61 @@
+body{
+    background: url('/assets/dogWalker.jpg') no-repeat;  
+    background-position: 40vw 5vh;    
+}
+#page-home{
+    margin: auto;
+    width: 100vw;
+    max-width: 960px;  
+}
+
+main .title{
+    margin: 16px 0;
+}
+
+main .body{
+    width: 250px;
+}
+
+main .cta{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 62px;
+    background: #5a3892;
+    border-radius: 8px;
+    color: #fff;    
+    font-weight: bold;
+    overflow: hidden;
+    transition: background 250ms;
+    cursor: pointer;
+}
+
+main .cta a{
+    flex: 1;
+}
+
+main .cta button{
+    width: 62px;
+    height: 62px;
+    border: 0;
+    border-radius: 8px 0 0 8px;
+    background: #452b70;
+    padding: 21px;  
+    cursor: pointer;  
+}
+
+main .cta img{
+    width: 100%;
+}
+
+main .cta p{
+    color: #fff;
+    text-align: center;
+    flex:1;
+}
+
+main .cta:hover{
+    background: #452b70;
+}

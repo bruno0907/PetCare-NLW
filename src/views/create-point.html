@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    <title>PetCare - Cadastro</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/create-point.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{% set pageId = "page-create-point" %}
+
+{% block content %}
+    <div class="content">
+        {% include "partials/header.html" %}
+
+        <form action="/save-point" method="POST">
+
+            <h1>Cadasto do Cuidador</h1>            
+
+            <fieldset>
+                <legend>
+                    Dados Pessoais
+                </legend>
+                <div class="field-group">
+                    <div class="field">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="image">Sua Foto</label>
+                        <input type="text" name="image" id="image" placeholder="https://...">
+                    </div>
+                </div>                
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="uf">Estado</label>
+                        <select name="uf" id="uf" required>
+                            <option value="">Selecione o seu estado...</option>
+                        </select>
+                        <input type="hidden" name="state">
+                    </div>
+                    <div class="field">
+                        <label for="city">Cidade</label>
+                        <select name="city" id="city" required disabled>
+                            <option value="">Selecione a sua cidade...</option>
+                        </select>                          
+                    </div>
+                                        
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="contact" required>Telefone/Whatsapp</label>
+                        <input type="number" name="phone" id="phone" required>                    
+                    </div>
+                    <div class="field">
+                        <label for="contact">Email</label>
+                        <input type="email" name="email" id="email" required>                    
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="facebook">Facebook</label>
+                        <input type="text" name="facebook" id="facebook">                    
+                    </div>
+                    <div class="field">
+                        <label for="instagram">Instagram</label>
+                        <input type="text" name="instagram" id="Instagram">                    
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Selecione os seus serviços prestados</legend>
+                <ul class="services">                    
+                    <li data-service="Pet Walker">
+                        <img src="/assets/dogWalker.svg" alt="Dog Walker">
+                        <span>Pet Walker</span>
+                    </li>
+                    <li data-service="Home Care">
+                        <img src="/assets/homeCare.svg" alt="Home Care">
+                        <span>Home Care</span>                        
+                    </li>
+                    <li data-service="Adestrador">
+                        <img src="/assets/adestrador.svg" alt="Adestrador">
+                        <span>Adestrador</span>                        
+                    </li>
+                    <li data-service="Veterinário">
+                        <img src="/assets/veterinario.svg" alt="Veterinário">
+                        <span> Veterinário</span>
+                    </li>
+                    <li data-service="Banho&Tosa">
+                        <img src="/assets/banhoTosa.svg" alt="Banho&Tosa">
+                        <span>Banho/Tosa</span>
+                    </li>
+                    <li data-service="Hotel">
+                        <img src="/assets/hotel.svg" alt="Hotel">
+                        <span>Hotel</span>
+                    </li>                    
+                </ul>
+                <input type="hidden" name="serviceSelection">
+                <p>Você pode selecionar mais de um serviço.</p>
+            </fieldset>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    {% if success %}
+        {% include "partials/modal-create-point.html" %}}
+    {% endif %}
+
+
+
+{% endblock content %}
+
+{% block scripts %}
+    <script src="scripts/create-point.js"></script>
+{% endblock scripts %}
+

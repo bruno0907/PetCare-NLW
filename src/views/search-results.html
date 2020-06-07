@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/search-results.css">
+{% endblock styles %}
+
+{% block content %}
+    <div class="content">
+        {% include "partials/header.html" %}
+        <main>
+            {% if totalCuidadores > 0%}
+
+            <p><strong>{{ totalCuidadores }} pontos </strong>encontrados.</p>
+            <div class="cards">                
+                
+                {% for cuidador in cuidadores %}
+
+                    <div class="card">
+                        <img src="{{ cuidador.image }}" alt="">                      
+                        <div class="card-body">
+                        
+                            <h1>{{cuidador.name}}</h1>
+                            <h3>{{cuidador.serviceSelection}}</h3> 
+
+                            <div class="contact">                                
+                                <a href="https://api.whatsapp.com/send?phone=55{{cuidador.phone}}&text=Olá, vi seu contato no App PetCare.pet">
+                                    {{cuidador.phone}}
+                                </a>
+                                <a href="mailto:{{cuidador.email}}">
+                                    {{cuidador.email}}
+                                </a> 
+                                <p>{{cuidador.city}}</p>                               
+                                <p>{{cuidador.state}}</p>
+                            </div>                            
+                            <div class="social-media">
+                                {% if cuidador.facebook %}
+                                    <a  class="facebook" href="https://{{cuidador.facebook}}" target="_blank" rel="noopener noreferrer">
+                                        <button id="facebook" >Facebook</button>
+                                    </a>
+                                {% endif %}
+                                {% if cuidador.instagram %}
+                                    <a class="instagram" href="https://{{cuidador.instagram}}" target="_blank" rel="noopener noreferrer">
+                                        <button id="instagram">Instagram</button>
+                                    </a>
+                                {% endif %}
+                            </div> 
+                        </div>                   
+                    </div>
+
+                {% endfor %}
+                
+                {% else %}
+
+                <p><strong>Nenhum </strong>cuidador cadastrado!</p>
+
+                {% endif %}
+
+            </div>
+        </main>
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="scripts/search-results.js"></script>
+{% endblock scripts %}

@@ -1,0 +1,137 @@
+#page-create-point{
+    margin: auto;
+    width: 100vw; 
+    max-width: 960px;
+}
+
+form{
+    display: block;
+    padding: 65px;
+    background: #ffffff;
+    border-radius: 8px;
+    margin: auto;
+}
+
+fieldset{
+    border: 0;
+    margin-top: 65px;
+}
+
+form h1{
+    font-size: 2.5rem;
+}
+
+form legend{
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+form .field{    
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 24px;   
+    flex: 1;
+}
+
+form .field-group{
+    display: flex;  
+}
+
+label{
+    margin-bottom: 8px;
+    font-size: .9rem;
+}
+
+form input,
+form select{
+    width: 100%;
+    border: 0;
+    background: #f0f0f0;
+    padding: 16px 24px;
+    border-radius: 8px;
+    outline: none;
+}
+
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form input[type="number"]::-webkit-inner-spin-button,
+form input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+
+form .field-group .field + .field{
+    margin-left: 24px;
+}
+
+.services{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.services li{
+    width: 210px;
+    height: 140px;
+    margin: 12px;
+    background: #f0f0f0;
+    list-style: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;       
+}
+
+.services li img{
+    width: 75px;
+    height: 75px;
+    margin-bottom: 16px;
+}
+
+.services li span{
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.services li.selected{
+    border: solid 3px #5a3892;
+    background: #ceb8f3;
+}
+
+.services li img,
+.services li span{
+    pointer-events: none;
+}
+
+fieldset p{
+    flex: 1;
+    text-align: right;
+    font-size: .9rem;
+    margin-top: 8px;
+}
+
+form button{
+    cursor: pointer;
+    margin-top: 36px;
+    width: 320px;
+    height: 62px;
+    background: #5a3892;
+    border-radius: 8px;
+    border: 0;
+    color: #fff;    
+    font-weight: bold;
+    transition: background 250ms;
+}
+
+form button:hover{
+    background: #452b70;
+}

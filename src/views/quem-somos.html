@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-quem-somos" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/quem-somos.css">    
+{% endblock styles %}
+
+{% block content %}
+    <div class="content">
+        {% include "partials/header.html" %}
+        <main>
+            <div class="title">
+                <h1>{{title}}</h1> 
+            </div>
+            <div class="body">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ut eveniet labore nisi quidem suscipit necessitatibus repellendus quisquam distinctio ipsam? Ab saepe placeat maiores aliquid porro magnam quam quo, sit facere numquam nemo eveniet ipsum? Aspernatur culpa ipsum, accusantium numquam nihil accusamus itaque nesciunt, cupiditate dolorum consectetur architecto facilis quod?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptas eveniet non repellat error reprehenderit amet expedita ex obcaecati exercitationem sequi facilis, repudiandae magni enim iste consectetur laboriosam architecto modi.</p>
+            </div>            
+        </main>
+    </div>
+{% endblock content %}

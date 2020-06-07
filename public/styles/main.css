@@ -1,0 +1,94 @@
+:root{
+    font-size: 14px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+a{
+    text-decoration: none;
+    color: #00a18c;
+    transition: color 250ms;
+}
+a:hover{color: #006d5e;}
+
+p{color: #2c2c2c;}
+
+h1, h2, h3, h4, h5, h6{color: #5a3892;}
+h1{font-size: 2.5rem;}
+h2{font-size: 2.3rem;}
+h3{font-size: 2.1rem;}
+h4{font-size: 1.9rem;}
+h5{font-size: 1.7rem;}
+h6{font-size: 1.5rem;}
+
+header{
+    margin: 36px 0;
+    width: 100%;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > a > img{
+    width: 40px;    
+}
+
+header > a > span{
+    color: #00a18c;
+    font-size: 2rem;
+    padding: 0 7px;
+    font-weight: bold;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+}
+
+nav ul{    
+    list-style: none;       
+}
+
+nav ul li{
+    display: inline;
+    margin: 5px;    
+}
+
+.content{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;    
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 65px 0;         
+}
+
+footer{
+    margin: 36px 0;
+    text-align: center;
+    width: 100%;
+}
