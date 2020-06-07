@@ -69,6 +69,39 @@ E claro tratamento da mensagem de sucesso na inserção:
             redirect: "/"
         })
 
-## Telas demonstrativas
+## Telas demonstrativas Desktop
 
-(/public/assets/desktop_home.png)
+![Tela Home Desktop](/public/assets/desktop_home.png)
+
+![Tela Home Desktop](/public/assets/desktop_results.png)
+
+![Tela Home Desktop](/public/assets/desktop_cadastro.png)
+
+## Telas demonstrativas Mobile
+
+![Tela Home Mobile](/public/assets/mobile_home.png)
+
+![Tela Home Mobile](/public/assets/mobile_who.png)
+
+![Tela Home Mobile](/public/assets/mobile_cadastro.png)
+
+
+## Demais telas demonstrativas
+
+[!Erro de Cadastro Desktop](/public/assets/desktop_error.png)
+
+[!Sucesso de Cadastro Desktop](/public/assets/desktop_success.png)
+
+[!Tela de Search Desktop](/public/assets/desktop_search.png)
+
+[!Tela Quem Somos Desktop](/public/assets/desktop_who.png)
+
+
+[!Tela de Erro de Cadastro Mobile](/public/assets/mobile_error.png)
+
+[!Tela de Sucesso de Cadastro Mobile](/public/assets/mobile_sucess.png)
+
+[!Tela de Search Mobile](/public/assets/mobile_search.png)
+
+[!Tela de Resultados Mobile](/public/assets/mobile_results.png)
+
