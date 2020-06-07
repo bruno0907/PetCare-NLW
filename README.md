@@ -5,6 +5,13 @@ Projeto prático da primeira semana #NLW by Rocketseat.
 Este é um projeto prática baseado na proposta da primeira semana da Next Week Level #NWL da Rocketseat.
 Partindo da proposta da equipe optei por desenvolver um layout e idéia particular mas seguindo várias propostas do projeto original.
 
+## Tecnologias Utilizadas:
+ - HTML5 e CSS3
+ - Javascript
+  - ArrowFunctions, API, DOM
+ - Node.js
+  - Express, SQLite3, Nunjucks
+
 Entre as modificações, a de temática de reciclagem do projeto original para a de profissionais de tratamento de Pets tais como:
  
   - Pet Walkers (Passeadores)
