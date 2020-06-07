@@ -1,0 +1,52 @@
+@media only screen and (max-width: 830px){
+    form .field-group{
+        flex-direction: column;
+    }
+    form .field-group .field + .field {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+    #page-home{ 
+        background-position: 140px 5vh; 
+    }
+}
+
+@media only screen and (max-width: 610px){
+    .cards{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 590px){
+    #page-home{ 
+        background-position: 0px 250px; 
+    }
+    main{
+        padding: 45px 0;
+    }
+    .title{
+        width: 100%;
+        text-align: center;
+    }
+    .cta{
+        margin: 24px auto!important;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    #page-home{ 
+        background-position: center 250px; 
+    }
+    h1{
+        font-size: 2rem;
+    }
+}

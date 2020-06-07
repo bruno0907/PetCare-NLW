@@ -7,9 +7,11 @@
     z-index: 1;
     background: rgba(0,0,0,.8);
     display: flex;
+    visibility: hidden;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;    
 }
 
 #modal .header{
@@ -28,14 +30,14 @@
 }
 
 #modal h1{
-    color: #fff;
+    color: #FFF;
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 12px;
 }
 
 #modal p{
-    color: #fff;
+    color: #FFF;
     text-align: center;
 }
 
@@ -47,7 +49,7 @@
 #modal form input{
     flex: 1;
     border: 0;
-    background: #f0f0f0;
+    background: var(--grey);
     padding: 16px 24px;
     border-radius: 8px 0 0 8px;
     outline: none;
@@ -56,7 +58,7 @@
 #modal form button{
     width: 62px;
     height: 62px;
-    background: #5a3892;
+    background: var(--purple);
     border: 0;
     border-radius: 0 8px 8px 0;
     color: #fff;    
@@ -74,7 +76,7 @@
 }
 
 #modal form button[type="submit"]:hover{
-    background: #452b70;
+    background: var(--purple-hover);
 }
 
 #modal a{
@@ -86,9 +88,11 @@
 }
 
 #modal a:hover{
-    color: #c4c4c4;
+    color: var(--grey);
 }
-#modal.hide {
-   display: none;
+#modal.show {
+   visibility: visible;
+   opacity: 1;
+   transition: opacity 250ms;
 }
 

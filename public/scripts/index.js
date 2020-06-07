@@ -4,7 +4,7 @@ function modalHandle(){
     
     modalHandler.forEach(handler => {
         handler.addEventListener('click', () => {
-            modal.classList.toggle('hide') 
+            modal.classList.toggle('show')             
         }); 
     })
 }
